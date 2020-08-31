@@ -29,10 +29,10 @@ const Formulario = () => {
         <Nombre register={register} errors={errors} />
         <Tipo register={register} />
         <Descripcion register={register} errors={errors} />
+        <Telefono register={register} errors={errors} />
         <DiasAbiertos register={register} />
         <Horas register={register} />
         <Coordenadas register={register} />
-        <Telefono register={register} errors={errors} />
         <Archivos register={register} />
         <Button type="submit">Enviar</Button>
       </Form>

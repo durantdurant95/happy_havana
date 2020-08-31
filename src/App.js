@@ -13,7 +13,9 @@ function App() {
     <Fragment>
       <Router>
         <Container>
-          <NavLink to="/">Logo</NavLink>
+          <NavLink to="/" exact>
+            Logo
+          </NavLink>
         </Container>
         <Switch>
           <Route path="/" exact>

@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "./fonts/JosefinSans-VariableFont_wght.ttf";
-import "./fonts/UrbanistGX.ttf";
 import "./App.scss";
 import Formulario from "./components/Formulario";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";

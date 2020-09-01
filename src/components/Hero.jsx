@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <Container>
-      <h1>Happy Havana</h1>
+    <Container className="hero">
+      <h1 className="my-5 display-3">Happy Havana</h1>
       <p>Catalogamos los mejores bares, cafeterías y similares en la ciudad</p>
-      <Button>Descarga</Button>
+      <Button className="mr-5">Descarga</Button>
       <NavLink to="/formulario">
         <Button>Anúnciate</Button>
       </NavLink>

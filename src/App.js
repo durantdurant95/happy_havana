@@ -12,12 +12,12 @@ function App() {
     <Fragment>
       <Router>
         <Container>
-          <NavLink to="/" exact>
+          <NavLink to="/home" exact>
             Logo
           </NavLink>
         </Container>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/home" exact>
             <Hero />
           </Route>
           <Route path="/formulario" exact>

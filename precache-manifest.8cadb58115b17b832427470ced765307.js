@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "238aa595eb730577be9f8ec31f2a8675",
+    "revision": "90a04cd3bdf41883a9f4ade2334038c7",
     "url": "/happy_havana/index.html"
   },
   {
-    "revision": "ef025b77fe695f963a93",
+    "revision": "71bbb014bacec7ceea9c",
     "url": "/happy_havana/static/css/main.6cd886e9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/happy_havana/static/js/2.e10ff139.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ef025b77fe695f963a93",
-    "url": "/happy_havana/static/js/main.2657be7a.chunk.js"
+    "revision": "71bbb014bacec7ceea9c",
+    "url": "/happy_havana/static/js/main.d895fefd.chunk.js"
   },
   {
     "revision": "c68d26ea464ef18b64d7",

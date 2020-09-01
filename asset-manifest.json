@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/durantdurant95/happy_havana/static/css/main.31e2c7cb.chunk.css",
-    "main.js": "/durantdurant95/happy_havana/static/js/main.6b58080a.chunk.js",
-    "main.js.map": "/durantdurant95/happy_havana/static/js/main.6b58080a.chunk.js.map",
-    "runtime-main.js": "/durantdurant95/happy_havana/static/js/runtime-main.1fd6ba67.js",
-    "runtime-main.js.map": "/durantdurant95/happy_havana/static/js/runtime-main.1fd6ba67.js.map",
-    "static/js/2.aeb0fedf.chunk.js": "/durantdurant95/happy_havana/static/js/2.aeb0fedf.chunk.js",
-    "static/js/2.aeb0fedf.chunk.js.map": "/durantdurant95/happy_havana/static/js/2.aeb0fedf.chunk.js.map",
-    "index.html": "/durantdurant95/happy_havana/index.html",
-    "precache-manifest.2b71eb479f162f3669614afffc8840f7.js": "/durantdurant95/happy_havana/precache-manifest.2b71eb479f162f3669614afffc8840f7.js",
-    "service-worker.js": "/durantdurant95/happy_havana/service-worker.js",
-    "static/css/main.31e2c7cb.chunk.css.map": "/durantdurant95/happy_havana/static/css/main.31e2c7cb.chunk.css.map",
-    "static/js/2.aeb0fedf.chunk.js.LICENSE.txt": "/durantdurant95/happy_havana/static/js/2.aeb0fedf.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/durantdurant95/happy_havana/static/media/UrbanistGX.14f785b5.ttf"
+    "main.css": "/happy_havana/static/css/main.6cd886e9.chunk.css",
+    "main.js": "/happy_havana/static/js/main.2657be7a.chunk.js",
+    "main.js.map": "/happy_havana/static/js/main.2657be7a.chunk.js.map",
+    "runtime-main.js": "/happy_havana/static/js/runtime-main.1d34f999.js",
+    "runtime-main.js.map": "/happy_havana/static/js/runtime-main.1d34f999.js.map",
+    "static/js/2.e10ff139.chunk.js": "/happy_havana/static/js/2.e10ff139.chunk.js",
+    "static/js/2.e10ff139.chunk.js.map": "/happy_havana/static/js/2.e10ff139.chunk.js.map",
+    "index.html": "/happy_havana/index.html",
+    "precache-manifest.53c5cee6b528cdd12faf888c4e775466.js": "/happy_havana/precache-manifest.53c5cee6b528cdd12faf888c4e775466.js",
+    "service-worker.js": "/happy_havana/service-worker.js",
+    "static/css/main.6cd886e9.chunk.css.map": "/happy_havana/static/css/main.6cd886e9.chunk.css.map",
+    "static/js/2.e10ff139.chunk.js.LICENSE.txt": "/happy_havana/static/js/2.e10ff139.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/happy_havana/static/media/JosefinSans-VariableFont_wght.324a513c.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.1fd6ba67.js",
-    "static/js/2.aeb0fedf.chunk.js",
-    "static/css/main.31e2c7cb.chunk.css",
-    "static/js/main.6b58080a.chunk.js"
+    "static/js/runtime-main.1d34f999.js",
+    "static/js/2.e10ff139.chunk.js",
+    "static/css/main.6cd886e9.chunk.css",
+    "static/js/main.2657be7a.chunk.js"
   ]
 }

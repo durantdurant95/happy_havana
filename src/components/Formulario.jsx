@@ -23,7 +23,7 @@ const Formulario = () => {
   };
 
   return (
-    <Container>
+    <Container className="formulario">
       <h1 className="titulo">Formulario</h1>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Nombre register={register} errors={errors} />

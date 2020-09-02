@@ -12,15 +12,15 @@ function App() {
     <Fragment>
       <Router>
         <Container>
-          <NavLink to="/home" exact>
+          <NavLink to="/happy_havana" exact>
             Logo
           </NavLink>
         </Container>
         <Switch>
-          <Route path="/home" exact>
+          <Route path="/happy_havana" exact>
             <Hero />
           </Route>
-          <Route path="/formulario" exact>
+          <Route path="/happy_havana/formulario" exact>
             <Formulario />
           </Route>
         </Switch>

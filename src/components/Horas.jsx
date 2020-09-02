@@ -30,6 +30,21 @@ const Horas = (props) => {
           </Col>
           <Col sm="auto">
             <Form.Control
+              name="minutosApertura"
+              ref={props.register()}
+              as="select"
+              className="mb-1"
+            >
+              <option>00</option>
+              <option>10</option>
+              <option>20</option>
+              <option>30</option>
+              <option>40</option>
+              <option>50</option>
+            </Form.Control>
+          </Col>
+          <Col sm="auto">
+            <Form.Control
               name="aperturaAMPM"
               ref={props.register()}
               as="select"
@@ -63,6 +78,21 @@ const Horas = (props) => {
               <option>10</option>
               <option>11</option>
               <option>12</option>
+            </Form.Control>
+          </Col>
+          <Col sm="auto">
+            <Form.Control
+              name="minutosCierre"
+              ref={props.register()}
+              as="select"
+              className="mb-1"
+            >
+              <option>00</option>
+              <option>10</option>
+              <option>20</option>
+              <option>30</option>
+              <option>40</option>
+              <option>50</option>
             </Form.Control>
           </Col>
           <Col sm="auto">

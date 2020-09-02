@@ -11,6 +11,7 @@ import Telefono from "./Telefono";
 import Coordenadas from "./Coordenadas";
 import Tipo from "./Tipo";
 import { Parse } from "parse";
+import Direccion from "./Direccion";
 
 const Formulario = () => {
   useEffect(() => {
@@ -27,9 +28,47 @@ const Formulario = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+
     const Lugar = Parse.Object.extend("Lugar");
     const myNewObject = new Lugar();
-    myNewObject.set("descr", "{data.descripcion}");
+
+    myNewObject.set("nombre", data.nombre);
+    myNewObject.set("tipo", data.tipo);
+    myNewObject.set("vip", data.vip);
+    myNewObject.set("direcc", data.direccion);
+    myNewObject.set("descr", data.descripcion);
+    myNewObject.set("telefono", data.numeroTelefono);
+    myNewObject.set("lunesi", data.lunes);
+    myNewObject.set("martesi", data.martes);
+    myNewObject.set("miercolesi", data.miercoles);
+    myNewObject.set("juevesi", data.jueves);
+    myNewObject.set("viernesi", data.viernes);
+    myNewObject.set("sabadoi", data.sabado);
+    myNewObject.set("domingoi", data.domingo);
+    myNewObject.set(
+      "hora",
+      data.horaApertura +
+        ":" +
+        data.minutosApertura +
+        data.aperturaAMPM +
+        " - " +
+        data.horaCierre +
+        ":" +
+        data.minutosCierre +
+        data.cierreAMPM
+    );
+    myNewObject.set(
+      "coord",
+      new Parse.GeoPoint({
+        latitude: Number(data.latitud),
+        longitude: Number(data.longitud),
+      })
+    );
+
+    myNewObject.set("foto1", new Parse.File(data.foto1));
+    myNewObject.set("foto2", new Parse.File(data.foto2));
+    myNewObject.set("foto3", new Parse.File(data.foto3));
+    myNewObject.set("foto4", new Parse.File(data.foto4));
 
     myNewObject.save().then(
       (result) => {
@@ -53,6 +92,7 @@ const Formulario = () => {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Nombre register={register} errors={errors} />
         <Tipo register={register} />
+        <Direccion register={register} errors={errors} />
         <Descripcion register={register} errors={errors} />
         <Telefono register={register} errors={errors} />
         <DiasAbiertos register={register} />

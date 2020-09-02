@@ -18,7 +18,7 @@ function App() {
           <Route path="/formulario">
             <Formulario />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Hero />
           </Route>
         </Switch>

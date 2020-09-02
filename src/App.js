@@ -12,16 +12,14 @@ function App() {
     <Fragment>
       <Router>
         <Container>
-          <NavLink to="/happy_havana" exact>
-            Logo
-          </NavLink>
+          <NavLink to="/">Logo</NavLink>
         </Container>
         <Switch>
-          <Route path="/happy_havana" exact>
-            <Hero />
-          </Route>
           <Route path="/happy_havana/formulario" exact>
             <Formulario />
+          </Route>
+          <Route path="/">
+            <Hero />
           </Route>
         </Switch>
       </Router>

@@ -15,7 +15,7 @@ function App() {
           <NavLink to="/">Logo</NavLink>
         </Container>
         <Switch>
-          <Route path="/formulario" exact>
+          <Route path="/formulario">
             <Formulario />
           </Route>
           <Route path="/">

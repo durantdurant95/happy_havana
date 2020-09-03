@@ -17,8 +17,8 @@ const Tipo = (props) => {
             defaultValue="Bar"
           >
             <option>Bar</option>
-            <option>Bar Restauraant</option>
-            <option>Bar Bar Piscina</option>
+            <option>Bar Restaurant</option>
+            <option>Bar Piscina</option>
             <option>Bar Café</option>
             <option>Café</option>
             <option>Discoteca</option>

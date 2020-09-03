@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Container, Button, Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import bsCustomFileInput from "bs-custom-file-input";
 import Horas from "./Horas";
 import Archivos from "./Archivos";
@@ -33,7 +33,28 @@ const Formulario = () => {
     const myNewObject = new Lugar();
 
     myNewObject.set("nombre", data.nombre);
-    myNewObject.set("tipo", data.tipo);
+    myNewObject.set(
+      "tipo",
+      data.tipo === "Bar"
+        ? 0
+        : data.tipo === "Bar Restaurant"
+        ? 1
+        : data.tipo === "Bar Piscina"
+        ? 2
+        : data.tipo === "Bar Café"
+        ? 3
+        : data.tipo === "Café"
+        ? 4
+        : data.tipo === "Discoteca"
+        ? 5
+        : data.tipo === "Hotel"
+        ? 6
+        : data.tipo === "Club"
+        ? 7
+        : data.tipo === "Club Nocturno"
+        ? 8
+        : 9
+    );
     myNewObject.set("vip", data.vip);
     myNewObject.set("direcc", data.direccion);
     myNewObject.set("descr", data.descripcion);
@@ -64,44 +85,61 @@ const Formulario = () => {
         longitude: Number(data.longitud),
       })
     );
-
-    myNewObject.set("foto1", new Parse.File(data.foto1));
-    myNewObject.set("foto2", new Parse.File(data.foto2));
-    myNewObject.set("foto3", new Parse.File(data.foto3));
-    myNewObject.set("foto4", new Parse.File(data.foto4));
+    data.foto1[0]
+      ? myNewObject.set(
+          "foto1",
+          new Parse.File(data.foto1[0].name, data.foto1[0])
+        )
+      : console.log("foto1 no seleccionada");
+    data.foto2[0]
+      ? myNewObject.set(
+          "foto2",
+          new Parse.File(data.foto2[0].name, data.foto2[0])
+        )
+      : console.log("foto2 no seleccionada");
+    data.foto3[0]
+      ? myNewObject.set(
+          "foto3",
+          new Parse.File(data.foto3[0].name, data.foto3[0])
+        )
+      : console.log("foto2 no seleccionada");
+    data.foto4[0]
+      ? myNewObject.set(
+          "foto4",
+          new Parse.File(data.foto4[0].name, data.foto4[0])
+        )
+      : console.log("foto2 no seleccionada");
 
     myNewObject.save().then(
       (result) => {
         if (typeof document !== "undefined")
-          // document.write(`Lugar created: ${JSON.stringify(result)}`);
-          console.log("Lugar created", result);
+          document.write(`Lugar created: ${JSON.stringify(result)}`);
+        console.log("Lugar created", result);
       },
       (error) => {
         if (typeof document !== "undefined")
-          // document.write(
-          //   `Error while creating Lugar: ${JSON.stringify(error)}`
-          // );
-          console.error("Error while creating Lugar: ", error);
+          document.write(
+            `Error while creating Lugar: ${JSON.stringify(error)}`
+          );
+        console.error("Error while creating Lugar: ", error);
       }
     );
   };
 
   return (
-    <Container className="formulario">
+    <Form onSubmit={handleSubmit(onSubmit)} className="my-3 mr-5 formulario">
       <h1 className="titulo">Formulario</h1>
-      <Form onSubmit={handleSubmit(onSubmit)}>
-        <Nombre register={register} errors={errors} />
-        <Tipo register={register} />
-        <Direccion register={register} errors={errors} />
-        <Descripcion register={register} errors={errors} />
-        <Telefono register={register} errors={errors} />
-        <DiasAbiertos register={register} />
-        <Horas register={register} />
-        <Coordenadas register={register} />
-        <Archivos register={register} />
-        <Button type="submit">Enviar</Button>
-      </Form>
-    </Container>
+      <Nombre register={register} errors={errors} />
+      <Tipo register={register} />
+      <Direccion register={register} errors={errors} />
+      <Descripcion register={register} errors={errors} />
+      <Telefono register={register} errors={errors} />
+      <DiasAbiertos register={register} />
+      <Horas register={register} />
+      <Coordenadas register={register} />
+      <Archivos register={register} />
+      <Button type="submit">Enviar</Button>
+    </Form>
   );
 };
 

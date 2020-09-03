@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/happy_havana/precache-manifest.f54d759a8a1b8ae74ebb1592b1e5b943.js"
+  "/happy_havana/precache-manifest.11fd2340391788ad940fd6e11705c625.js"
 );
 
 self.addEventListener('message', (event) => {

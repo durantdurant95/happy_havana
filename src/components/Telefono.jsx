@@ -17,7 +17,7 @@ const Telefono = (props) => {
                 message: "Necesitamos un número de contacto",
               },
               pattern: {
-                value: /[0 - 9]/,
+                value: /^\d+$/,
                 message: "Debe incluir sólo númmeros",
               },
               minLength: {

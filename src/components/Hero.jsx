@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import ModalSubiendo from "./ModalSubiendo";
 
 const Hero = () => {
   return (
@@ -11,6 +12,7 @@ const Hero = () => {
       <NavLink to="/happy_havana/formulario">
         <Button>Anúnciate</Button>
       </NavLink>
+      <ModalSubiendo />
     </Container>
   );
 };

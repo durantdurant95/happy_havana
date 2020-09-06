@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Form } from "react-bootstrap";
 import bsCustomFileInput from "bs-custom-file-input";
@@ -12,22 +12,33 @@ import Coordenadas from "./Coordenadas";
 import Tipo from "./Tipo";
 import { Parse } from "parse";
 import Direccion from "./Direccion";
+import ModalSubiendo from "./ModalSubiendo";
 
 const Formulario = () => {
+  //React Hook Form
+  const { register, errors, handleSubmit, reset } = useForm();
   useEffect(() => {
     bsCustomFileInput.init();
   }, []);
 
+  //Funciones y estado del Modal de react-bootstrap
+  const [show, setShow] = useState(false);
+  const [mensaje, setMensaje] = useState("");
+  const manejoCierre = () => {
+    setMensaje("");
+    setShow(false);
+  };
+
+  //Conexion con la base de datos de Back4App
   Parse.initialize(
     "0fA7EmBhnDTZqS5aHwEsSoqsmsiZdQrpWrxZIUAg",
     "yMZrtJC9IVeMpYZTGVYXCUP6Y73kyBxAmI5e4A8A"
   );
   Parse.serverURL = "https://parseapi.back4app.com/";
 
-  const { register, errors, handleSubmit } = useForm();
-
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = (data, e) => {
+    setShow(true);
+    setMensaje("Subiendo sus datos, por favor espere...");
 
     const Lugar = Parse.Object.extend("Lugar");
     const myNewObject = new Lugar();
@@ -110,36 +121,45 @@ const Formulario = () => {
         )
       : console.log("foto2 no seleccionada");
 
+    //Manejo de estado subiendo, subido, error
     myNewObject.save().then(
       (result) => {
-        if (typeof document !== "undefined")
-          document.write(`Lugar created: ${JSON.stringify(result)}`);
+        setMensaje("Datos incluidos en la base de datos correctamente");
         console.log("Lugar created", result);
       },
       (error) => {
-        if (typeof document !== "undefined")
-          document.write(
-            `Error while creating Lugar: ${JSON.stringify(error)}`
-          );
+        setMensaje("Error subiendo sus datos, revise su conexión de red");
         console.error("Error while creating Lugar: ", error);
       }
     );
   };
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit)} className="my-3 mr-5 formulario">
-      <h1 className="titulo">Formulario</h1>
-      <Nombre register={register} errors={errors} />
-      <Tipo register={register} />
-      <Direccion register={register} errors={errors} />
-      <Descripcion register={register} errors={errors} />
-      <Telefono register={register} errors={errors} />
-      <DiasAbiertos register={register} />
-      <Horas register={register} />
-      <Coordenadas register={register} />
-      <Archivos register={register} />
-      <Button type="submit">Enviar</Button>
-    </Form>
+    <Fragment>
+      <Form onSubmit={handleSubmit(onSubmit)} className="my-3 mr-5 formulario">
+        <h1 className="titulo">Formulario</h1>
+        <Nombre register={register} errors={errors} />
+        <Tipo register={register} />
+        <Direccion register={register} errors={errors} />
+        <Descripcion register={register} errors={errors} />
+        <Telefono register={register} errors={errors} />
+        <DiasAbiertos register={register} />
+        <Horas register={register} />
+        <Coordenadas register={register} />
+        <Archivos register={register} />
+        <Button type="submit" className="mr-3">
+          Enviar
+        </Button>
+        <Button type="button" onClick={reset}>
+          Limpiar Campos
+        </Button>
+      </Form>
+      <ModalSubiendo
+        show={show}
+        mensaje={mensaje}
+        manejoCierre={manejoCierre}
+      />
+    </Fragment>
   );
 };
 

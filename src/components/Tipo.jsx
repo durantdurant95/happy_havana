@@ -9,7 +9,7 @@ const Tipo = (props) => {
         <Form.Label column sm="auto">
           Categoría
         </Form.Label>
-        <Col sm="auto" className="mr-5">
+        <Col className="mr-5">
           <Form.Control
             name="tipo"
             ref={props.register()}
@@ -28,7 +28,7 @@ const Tipo = (props) => {
             <option>Piscina</option>
           </Form.Control>
         </Col>
-        <Col sm="auto">
+        <Col>
           <Vip register={props.register} />
         </Col>
       </Form.Row>

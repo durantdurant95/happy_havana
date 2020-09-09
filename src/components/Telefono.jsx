@@ -12,10 +12,6 @@ const Telefono = (props) => {
           <Form.Control
             name="numeroTelefono"
             ref={props.register({
-              required: {
-                value: true,
-                message: "Necesitamos un número de contacto",
-              },
               pattern: {
                 value: /^\d+$/,
                 message: "Debe incluir sólo númmeros",

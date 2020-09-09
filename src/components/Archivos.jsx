@@ -10,9 +10,17 @@ const Archivos = (props) => {
           label="Elija Foto 1"
           id="foto1"
           name="foto1"
-          ref={props.register()}
+          ref={props.register({
+            required: {
+              value: true,
+              message: "Necesitamos al menos una foto",
+            },
+          })}
           data-browse="Buscar"
         />
+        <Form.Text className="text-danger">
+          {props.errors?.foto1?.message}
+        </Form.Text>
       </Form.Group>
       <Form.Group as={Col} sm="6" lg="3">
         <Form.File

@@ -1,6 +1,6 @@
-import React, { useEffect, useState, Fragment } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Container } from "react-bootstrap";
 import bsCustomFileInput from "bs-custom-file-input";
 import Horas from "./Horas";
 import Archivos from "./Archivos";
@@ -135,8 +135,8 @@ const Formulario = () => {
   };
 
   return (
-    <Fragment>
-      <Form onSubmit={handleSubmit(onSubmit)} className="my-3 mr-5 formulario">
+    <Container className="formulario">
+      <Form onSubmit={handleSubmit(onSubmit)} className="py-3 mr-5">
         <h1 className="titulo">Formulario</h1>
         <Nombre register={register} errors={errors} />
         <Tipo register={register} />
@@ -146,8 +146,8 @@ const Formulario = () => {
         <DiasAbiertos register={register} />
         <Horas register={register} />
         <Coordenadas register={register} />
-        <Archivos register={register} />
-        <Button type="submit" className="mr-3">
+        <Archivos register={register} errors={errors} />
+        <Button variant="secondary" type="submit" className="mr-3">
           Enviar
         </Button>
         <Button type="button" onClick={reset}>
@@ -159,7 +159,7 @@ const Formulario = () => {
         mensaje={mensaje}
         manejoCierre={manejoCierre}
       />
-    </Fragment>
+    </Container>
   );
 };
 

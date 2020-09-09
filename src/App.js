@@ -1,29 +1,26 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./fonts/JosefinSans-VariableFont_wght.ttf";
+import "./fonts/Jost-VariableFont_ital_wght.ttf";
 import "./App.scss";
 import Formulario from "./components/Formulario";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Switch from "react-bootstrap/esm/Switch";
 import Hero from "./components/Hero";
-import { Container } from "react-bootstrap";
+import BarraNav from "./components/BarraNav";
 
 function App() {
   return (
-    <Fragment>
-      <Router>
-        <Container>
-          <NavLink to="/happy_havana">Logo</NavLink>
-        </Container>
-        <Switch>
-          <Route path="/happy_havana/formulario">
-            <Formulario />
-          </Route>
-          <Route path="/happy_havana" exact>
-            <Hero />
-          </Route>
-        </Switch>
-      </Router>
-    </Fragment>
+    <Router className="mainPage">
+      <BarraNav />
+      <Switch>
+        <Route path="/happy_havana/formulario">
+          <Formulario />
+        </Route>
+        <Route path="/happy_havana" exact>
+          <Hero />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

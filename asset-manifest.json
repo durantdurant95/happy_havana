@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/happy_havana/static/css/main.b8fd9051.chunk.css",
-    "main.js": "/happy_havana/static/js/main.83f41cb6.chunk.js",
-    "main.js.map": "/happy_havana/static/js/main.83f41cb6.chunk.js.map",
+    "main.css": "/happy_havana/static/css/main.78e3faa2.chunk.css",
+    "main.js": "/happy_havana/static/js/main.3ab3ac9a.chunk.js",
+    "main.js.map": "/happy_havana/static/js/main.3ab3ac9a.chunk.js.map",
     "runtime-main.js": "/happy_havana/static/js/runtime-main.1d34f999.js",
     "runtime-main.js.map": "/happy_havana/static/js/runtime-main.1d34f999.js.map",
-    "static/js/2.94698cab.chunk.js": "/happy_havana/static/js/2.94698cab.chunk.js",
-    "static/js/2.94698cab.chunk.js.map": "/happy_havana/static/js/2.94698cab.chunk.js.map",
+    "static/js/2.99153f53.chunk.js": "/happy_havana/static/js/2.99153f53.chunk.js",
+    "static/js/2.99153f53.chunk.js.map": "/happy_havana/static/js/2.99153f53.chunk.js.map",
     "index.html": "/happy_havana/index.html",
-    "precache-manifest.d499b1a9ff25c3ff4aef80677c456b4f.js": "/happy_havana/precache-manifest.d499b1a9ff25c3ff4aef80677c456b4f.js",
+    "precache-manifest.56c7c0f2abece7a02d14ca23f74417ba.js": "/happy_havana/precache-manifest.56c7c0f2abece7a02d14ca23f74417ba.js",
     "service-worker.js": "/happy_havana/service-worker.js",
-    "static/css/main.b8fd9051.chunk.css.map": "/happy_havana/static/css/main.b8fd9051.chunk.css.map",
-    "static/js/2.94698cab.chunk.js.LICENSE.txt": "/happy_havana/static/js/2.94698cab.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/happy_havana/static/media/JosefinSans-VariableFont_wght.324a513c.ttf"
+    "static/css/main.78e3faa2.chunk.css.map": "/happy_havana/static/css/main.78e3faa2.chunk.css.map",
+    "static/js/2.99153f53.chunk.js.LICENSE.txt": "/happy_havana/static/js/2.99153f53.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/happy_havana/static/media/Jost-VariableFont_ital_wght.6322ee6a.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.1d34f999.js",
-    "static/js/2.94698cab.chunk.js",
-    "static/css/main.b8fd9051.chunk.css",
-    "static/js/main.83f41cb6.chunk.js"
+    "static/js/2.99153f53.chunk.js",
+    "static/css/main.78e3faa2.chunk.css",
+    "static/js/main.3ab3ac9a.chunk.js"
   ]
 }

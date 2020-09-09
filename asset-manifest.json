@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/happy_havana/static/css/main.78e3faa2.chunk.css",
-    "main.js": "/happy_havana/static/js/main.a63bb3f3.chunk.js",
-    "main.js.map": "/happy_havana/static/js/main.a63bb3f3.chunk.js.map",
+    "main.css": "/happy_havana/static/css/main.61c5f518.chunk.css",
+    "main.js": "/happy_havana/static/js/main.f999523e.chunk.js",
+    "main.js.map": "/happy_havana/static/js/main.f999523e.chunk.js.map",
     "runtime-main.js": "/happy_havana/static/js/runtime-main.1d34f999.js",
     "runtime-main.js.map": "/happy_havana/static/js/runtime-main.1d34f999.js.map",
     "static/js/2.683eaaa4.chunk.js": "/happy_havana/static/js/2.683eaaa4.chunk.js",
     "static/js/2.683eaaa4.chunk.js.map": "/happy_havana/static/js/2.683eaaa4.chunk.js.map",
     "index.html": "/happy_havana/index.html",
-    "precache-manifest.4acabdaa5796758bfb27791e4f703923.js": "/happy_havana/precache-manifest.4acabdaa5796758bfb27791e4f703923.js",
+    "precache-manifest.628cf27e8965361b7b967ac54a833e90.js": "/happy_havana/precache-manifest.628cf27e8965361b7b967ac54a833e90.js",
     "service-worker.js": "/happy_havana/service-worker.js",
-    "static/css/main.78e3faa2.chunk.css.map": "/happy_havana/static/css/main.78e3faa2.chunk.css.map",
+    "static/css/main.61c5f518.chunk.css.map": "/happy_havana/static/css/main.61c5f518.chunk.css.map",
     "static/js/2.683eaaa4.chunk.js.LICENSE.txt": "/happy_havana/static/js/2.683eaaa4.chunk.js.LICENSE.txt",
     "static/media/index.css": "/happy_havana/static/media/Jost-VariableFont_ital_wght.6322ee6a.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.1d34f999.js",
     "static/js/2.683eaaa4.chunk.js",
-    "static/css/main.78e3faa2.chunk.css",
-    "static/js/main.a63bb3f3.chunk.js"
+    "static/css/main.61c5f518.chunk.css",
+    "static/js/main.f999523e.chunk.js"
   ]
 }

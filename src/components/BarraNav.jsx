@@ -11,8 +11,8 @@ const BarraNav = () => {
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="ml-auto">
-            <Nav.Link href="/happy_havana">Inicio</Nav.Link>
-            <Nav.Link href="/happy_havana/formulario">Formulario</Nav.Link>
+            <NavLink to="/happy_havana">Inicio</NavLink>
+            <NavLink to="/happy_havana/formulario">Formulario</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

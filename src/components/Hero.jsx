@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Button, Col } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -31,9 +32,11 @@ const Hero = () => {
           </p>
         </Col>
         <Col xs={{ span: 2, offset: 6 }}>
-          <Button href="/happy_havana/formulario" variant="secondary" size="lg">
-            Anúnciate
-          </Button>
+          <NavLink to="/happy_havana/formulario">
+            <Button variant="secondary" size="lg">
+              Anúnciate
+            </Button>
+          </NavLink>
         </Col>
       </Container>
     </Container>

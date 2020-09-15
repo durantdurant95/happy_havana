@@ -1,14 +1,18 @@
 import React from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Image, Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import logo from "../images/icono_hh.svg";
 const BarraNav = () => {
   return (
-    <Navbar expand="md" variant="dark" bg="primary" sticky="top">
+    <Navbar expand="md" variant="light" sticky="top">
       <Container>
         <NavLink to="/happy_havana">
-          <Navbar.Brand>HappyHavana</Navbar.Brand>
+          <Image src={logo} height="40" className="mr-1 align-top" />
+          <Navbar.Brand className="ml-2">Happy Havana</Navbar.Brand>
         </NavLink>
-        <Navbar.Toggle />
+        <Navbar.Toggle>
+          <div className="nav-icon"></div>
+        </Navbar.Toggle>
         <Navbar.Collapse>
           <Nav className="ml-auto">
             <NavLink className="links" to="/happy_havana">

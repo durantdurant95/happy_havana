@@ -1,6 +1,6 @@
 import React from "react";
 import "./fonts/JosefinSans-VariableFont_wght.ttf";
-import "./fonts/Jost-VariableFont_ital_wght.ttf";
+import "./fonts/Muli-VariableFont_wght.ttf";
 import "./App.scss";
 import Formulario from "./components/Formulario";
 import { BrowserRouter as Router, Route } from "react-router-dom";

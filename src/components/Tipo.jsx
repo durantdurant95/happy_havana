@@ -15,6 +15,7 @@ const Tipo = (props) => {
             ref={props.register()}
             as="select"
             defaultValue="Bar"
+            custom
           >
             <option>Bar</option>
             <option>Bar Restaurant</option>

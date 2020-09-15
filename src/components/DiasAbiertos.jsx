@@ -27,8 +27,8 @@ const DiasAbiertos = (props) => {
       />
       <Form.Check
         className="ml-3"
-        inline
         custom
+        inline
         id="miercoles"
         label="Miércoles"
         name="miercoles"

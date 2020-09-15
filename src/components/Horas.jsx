@@ -9,6 +9,7 @@ const Horas = (props) => {
         <Form.Row>
           <Col sm="auto">
             <Form.Control
+              custom
               name="horaApertura"
               ref={props.register()}
               as="select"
@@ -30,6 +31,7 @@ const Horas = (props) => {
           </Col>
           <Col sm="auto">
             <Form.Control
+              custom
               name="minutosApertura"
               ref={props.register()}
               as="select"
@@ -45,6 +47,7 @@ const Horas = (props) => {
           </Col>
           <Col sm="auto">
             <Form.Control
+              custom
               name="aperturaAMPM"
               ref={props.register()}
               as="select"
@@ -60,6 +63,7 @@ const Horas = (props) => {
         <Form.Row>
           <Col sm="auto">
             <Form.Control
+              custom
               name="horaCierre"
               type="number"
               ref={props.register()}
@@ -82,6 +86,7 @@ const Horas = (props) => {
           </Col>
           <Col sm="auto">
             <Form.Control
+              custom
               name="minutosCierre"
               ref={props.register()}
               as="select"
@@ -96,7 +101,12 @@ const Horas = (props) => {
             </Form.Control>
           </Col>
           <Col sm="auto">
-            <Form.Control name="cierreAMPM" ref={props.register()} as="select">
+            <Form.Control
+              custom
+              name="cierreAMPM"
+              ref={props.register()}
+              as="select"
+            >
               <option>AM</option>
               <option>PM</option>
             </Form.Control>

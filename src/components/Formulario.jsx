@@ -36,6 +36,7 @@ const Formulario = () => {
   );
   Parse.serverURL = "https://parseapi.back4app.com/";
 
+  // Funcion que maneja el submit de datos
   const onSubmit = (data, e) => {
     setShow(true);
     setMensaje("Subiendo sus datos, por favor espere...");
@@ -135,9 +136,9 @@ const Formulario = () => {
   };
 
   return (
-    <Container className="formulario">
-      <Form onSubmit={handleSubmit(onSubmit)} className="py-3 mr-5">
-        <h1 className="titulo">Formulario</h1>
+    <Form onSubmit={handleSubmit(onSubmit)} className="formulario py-3">
+      <Container>
+        <h1 className="titulo">Anúnciate ya!</h1>
         <Nombre register={register} errors={errors} />
         <Tipo register={register} />
         <Direccion register={register} errors={errors} />
@@ -148,18 +149,18 @@ const Formulario = () => {
         <Coordenadas register={register} />
         <Archivos register={register} errors={errors} />
         <Button variant="secondary" type="submit" className="mr-3">
-          Enviar
+          Enviar Datos
         </Button>
         <Button type="button" onClick={reset}>
           Limpiar Campos
         </Button>
-      </Form>
+      </Container>
       <ModalSubiendo
         show={show}
         mensaje={mensaje}
         manejoCierre={manejoCierre}
       />
-    </Container>
+    </Form>
   );
 };
 

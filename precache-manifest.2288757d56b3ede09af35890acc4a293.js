@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef4e251190d88e0f487f4733a733e386",
+    "revision": "043ae81097e85542b097ae080945fe9a",
     "url": "/happy_havana/index.html"
   },
   {
-    "revision": "3b3df565e8ddc8ad88dd",
-    "url": "/happy_havana/static/css/main.4d9972ab.chunk.css"
+    "revision": "8903e65441b9b745ba3c",
+    "url": "/happy_havana/static/css/main.8b8c8b12.chunk.css"
   },
   {
     "revision": "f2f761395f64518624cb",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/happy_havana/static/js/2.0bcc852b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b3df565e8ddc8ad88dd",
-    "url": "/happy_havana/static/js/main.e95f433b.chunk.js"
+    "revision": "8903e65441b9b745ba3c",
+    "url": "/happy_havana/static/js/main.7c92b7ff.chunk.js"
   },
   {
     "revision": "c68d26ea464ef18b64d7",
@@ -48,11 +48,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/happy_havana/static/media/ok.b1b5e3e9.svg"
   },
   {
-    "revision": "75d5e30e12158f6c2d72ccbabbfd7c4a",
-    "url": "/happy_havana/static/media/wall_hero.75d5e30e.jpg"
-  },
-  {
     "revision": "221b16ae3fb8767c6ea30c8e8f7ce5f1",
     "url": "/happy_havana/static/media/wall_hero_2.221b16ae.jpg"
+  },
+  {
+    "revision": "70ba0a66e23c18ca518adce19b8dbfe5",
+    "url": "/happy_havana/static/media/wallpaper_hero.70ba0a66.jpg"
   }
 ]);

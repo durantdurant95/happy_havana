@@ -8,7 +8,9 @@ const BarraNav = () => {
       <Container>
         <NavLink to="/happy_havana">
           <Image src={logo} height="40" className="mr-1 align-top" />
-          <Navbar.Brand className="ml-2">Happy Havana</Navbar.Brand>
+          <Navbar.Brand className="ml-2">
+            Happy <span>Havana</span>
+          </Navbar.Brand>
         </NavLink>
         <Navbar.Toggle>
           <div className="nav-icon"></div>

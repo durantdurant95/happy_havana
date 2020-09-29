@@ -19,8 +19,14 @@ code {
 }
 
 @font-face {
-  font-family: "Muli";
-  src: local("Muli"),
-    url(./fonts/Muli-VariableFont_wght.ttf) format("truetype-variations");
-  font-weight: 100 700;
+  font-family: "Jost";
+  src: local("Jost"),
+    url(./fonts/Jost-VariableFont_ital_wght.ttf) format("truetype-variations");
+  font-weight: 100 900;
+  italic: 0 1;
+}
+
+@font-face {
+  font-family: "Satisfy";
+  src: local("Satisfy"), url(./fonts/Satisfy-Regular.ttf) format("truetype");
 }

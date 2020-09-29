@@ -10,14 +10,14 @@ $secondary: #087f5b;
 }
 body {
   h1 {
-    font-family: Muli;
-    font-variation-settings: "wght" 900;
+    font-family: Jost;
+    font-variation-settings: "wght" 800;
   }
   p {
     font-family: JosefinSans;
     font-weight: 350;
-    font-size: 1.5rem;
-    margin: 50px 0;
+    font-size: clamp(1.4em, 2.2vw, 2.2em);
+    margin: 30px 0;
     color: lighten($color: $primary, $amount: 30);
   }
 }
@@ -31,8 +31,8 @@ body {
 }
 
 .navbar {
-  font-family: Muli;
-  font-weight: 600;
+  font-family: Jost;
+  font-weight: 500;
   letter-spacing: 1px;
   background: darken($color: $primary, $amount: 57);
   .navbar-brand {
@@ -129,6 +129,7 @@ body {
     color: $primary;
     font-weight: 700;
     padding-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .btn {
@@ -136,16 +137,23 @@ body {
   }
 }
 
+.satisfy {
+  color: lighten($color: $secondary, $amount: 15) !important;
+  font-family: Satisfy;
+}
 #hero-form {
-  background: url(./images/wall_hero_2.jpg) bottom / cover no-repeat;
+  background: url(./images/wallpaper_hero_2.jpg) center / cover no-repeat;
   min-height: calc(100vh - 56px);
   h1 {
-    padding: 60px 0;
     text-align: right;
-    color: $secondary;
+    color: $primary;
+    span {
+      color: $secondary;
+    }
   }
   p {
     text-align: right;
+    // color: darken($color: $secondary, $amount: 20);
   }
 }
 
@@ -155,13 +163,16 @@ body {
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.6)
     ),
-    url(./images/background_form.jpg) center / cover no-repeat;
-  font-family: Muli;
-  font-weight: 300;
+    url(./images/background_form.jpg) top / cover no-repeat;
+  font-family: JosefinSans;
+  font-weight: 350;
   h1 {
-    font-family: Muli;
+    font-family: Jost;
     font-weight: 800;
     color: $primary;
+    span {
+      color: $secondary;
+    }
   }
 }
 .modal-body {

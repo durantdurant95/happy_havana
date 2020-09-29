@@ -138,7 +138,9 @@ const Formulario = () => {
   return (
     <Form onSubmit={handleSubmit(onSubmit)} className="formulario py-3">
       <Container>
-        <h1 className="titulo">Anúnciate ya!</h1>
+        <h1>
+          Anúnciate <span>ya!</span>
+        </h1>
         <Nombre register={register} errors={errors} />
         <Tipo register={register} />
         <Direccion register={register} errors={errors} />

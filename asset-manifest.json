@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/happy_havana/static/css/main.8b8c8b12.chunk.css",
-    "main.js": "/happy_havana/static/js/main.7c92b7ff.chunk.js",
-    "main.js.map": "/happy_havana/static/js/main.7c92b7ff.chunk.js.map",
+    "main.css": "/happy_havana/static/css/main.9abb9ed2.chunk.css",
+    "main.js": "/happy_havana/static/js/main.fc3fef05.chunk.js",
+    "main.js.map": "/happy_havana/static/js/main.fc3fef05.chunk.js.map",
     "runtime-main.js": "/happy_havana/static/js/runtime-main.1d34f999.js",
     "runtime-main.js.map": "/happy_havana/static/js/runtime-main.1d34f999.js.map",
-    "static/js/2.0bcc852b.chunk.js": "/happy_havana/static/js/2.0bcc852b.chunk.js",
-    "static/js/2.0bcc852b.chunk.js.map": "/happy_havana/static/js/2.0bcc852b.chunk.js.map",
+    "static/js/2.7622b2fc.chunk.js": "/happy_havana/static/js/2.7622b2fc.chunk.js",
+    "static/js/2.7622b2fc.chunk.js.map": "/happy_havana/static/js/2.7622b2fc.chunk.js.map",
     "index.html": "/happy_havana/index.html",
-    "precache-manifest.2288757d56b3ede09af35890acc4a293.js": "/happy_havana/precache-manifest.2288757d56b3ede09af35890acc4a293.js",
+    "precache-manifest.f1c7e16918b432ca08479fd7572934d8.js": "/happy_havana/precache-manifest.f1c7e16918b432ca08479fd7572934d8.js",
     "service-worker.js": "/happy_havana/service-worker.js",
-    "static/css/main.8b8c8b12.chunk.css.map": "/happy_havana/static/css/main.8b8c8b12.chunk.css.map",
-    "static/js/2.0bcc852b.chunk.js.LICENSE.txt": "/happy_havana/static/js/2.0bcc852b.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/happy_havana/static/media/Muli-VariableFont_wght.e8efee92.ttf",
-    "static/media/App.scss": "/happy_havana/static/media/wallpaper_hero.70ba0a66.jpg",
+    "static/css/main.9abb9ed2.chunk.css.map": "/happy_havana/static/css/main.9abb9ed2.chunk.css.map",
+    "static/js/2.7622b2fc.chunk.js.LICENSE.txt": "/happy_havana/static/js/2.7622b2fc.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/happy_havana/static/media/Satisfy-Regular.aaa5880c.ttf",
+    "static/media/App.scss": "/happy_havana/static/media/wallpaper_hero_2.c57ae8bf.jpg",
     "static/media/error.svg": "/happy_havana/static/media/error.24219b64.svg",
     "static/media/icono_hh.svg": "/happy_havana/static/media/icono_hh.aa53298d.svg",
     "static/media/ok.svg": "/happy_havana/static/media/ok.b1b5e3e9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1d34f999.js",
-    "static/js/2.0bcc852b.chunk.js",
-    "static/css/main.8b8c8b12.chunk.css",
-    "static/js/main.7c92b7ff.chunk.js"
+    "static/js/2.7622b2fc.chunk.js",
+    "static/css/main.9abb9ed2.chunk.css",
+    "static/js/main.fc3fef05.chunk.js"
   ]
 }

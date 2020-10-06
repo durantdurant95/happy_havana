@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/happy_havana/static/css/main.9abb9ed2.chunk.css",
+    "main.css": "/happy_havana/static/css/main.a5087eff.chunk.css",
     "main.js": "/happy_havana/static/js/main.fc3fef05.chunk.js",
     "main.js.map": "/happy_havana/static/js/main.fc3fef05.chunk.js.map",
     "runtime-main.js": "/happy_havana/static/js/runtime-main.1d34f999.js",
@@ -8,20 +8,20 @@
     "static/js/2.7622b2fc.chunk.js": "/happy_havana/static/js/2.7622b2fc.chunk.js",
     "static/js/2.7622b2fc.chunk.js.map": "/happy_havana/static/js/2.7622b2fc.chunk.js.map",
     "index.html": "/happy_havana/index.html",
-    "precache-manifest.f1c7e16918b432ca08479fd7572934d8.js": "/happy_havana/precache-manifest.f1c7e16918b432ca08479fd7572934d8.js",
+    "precache-manifest.747f199dc5774d5c090419ba314627fb.js": "/happy_havana/precache-manifest.747f199dc5774d5c090419ba314627fb.js",
     "service-worker.js": "/happy_havana/service-worker.js",
-    "static/css/main.9abb9ed2.chunk.css.map": "/happy_havana/static/css/main.9abb9ed2.chunk.css.map",
+    "static/css/main.a5087eff.chunk.css.map": "/happy_havana/static/css/main.a5087eff.chunk.css.map",
     "static/js/2.7622b2fc.chunk.js.LICENSE.txt": "/happy_havana/static/js/2.7622b2fc.chunk.js.LICENSE.txt",
     "static/media/index.css": "/happy_havana/static/media/Satisfy-Regular.aaa5880c.ttf",
-    "static/media/App.scss": "/happy_havana/static/media/wallpaper_hero_2.c57ae8bf.jpg",
     "static/media/error.svg": "/happy_havana/static/media/error.24219b64.svg",
     "static/media/icono_hh.svg": "/happy_havana/static/media/icono_hh.aa53298d.svg",
-    "static/media/ok.svg": "/happy_havana/static/media/ok.b1b5e3e9.svg"
+    "static/media/ok.svg": "/happy_havana/static/media/ok.b1b5e3e9.svg",
+    "static/media/App.scss": "/happy_havana/static/media/wallpaper_hero_2.c57ae8bf.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1d34f999.js",
     "static/js/2.7622b2fc.chunk.js",
-    "static/css/main.9abb9ed2.chunk.css",
+    "static/css/main.a5087eff.chunk.css",
     "static/js/main.fc3fef05.chunk.js"
   ]
 }
